@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- Define o tipo do documento como HTML5 -->
+<html lang="en">
+<!-- Início da página, com o idioma definido como inglês -->
+
+<head>
+    <!-- A tag <head> contém informações sobre a página, não aparece visualmente -->
+
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres (permite acentos e letras especiais) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página se adaptar ao tamanho da tela do celular -->
+
+    <title>Ana Luiza<title>
+    <!-- Define o título da aba do navegador -->
+
+    <style>
+        /* Tudo aqui dentro é CSS — estilo visual da página */
+
+        body {
+            /* Estilo geral da página inteira */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* Define a fonte do texto (tenta usar as fontes na ordem, usa a última se não encontrar) */
+            background-color: #bfbef8;
+            /* Cor de fundo da página (roxo clarinho) */
+            margin: 20px;
+            /* Espaço entre o conteúdo e a borda da janela */
+        }
+
+        header h1{
+
+            margin-left: 300px;
+        }
+
+
+        /* Estilo do cabeçalho do site */
+        header{ 
+            
+            background-color: #1e1e57;
+            /* Fundo azul escuro/roxo */
+            color: rgb(255, 255, 255);
+            /* Cor do texto: branco */
+            padding: 20px;
+            /* Espaço interno entre o texto e as bordas do cabeçalho */
+            text-align: center;
+            /* Centraliza o texto */
+        }
+
+
+        /* Estilo dos links dentro da barra de navegação */
+        nav a {
+            
+            color: #ffffff;
+            /* Cor dos links: branco */
+            margin: 0 30px;
+            /* Espaço de 30px entre cada link (horizontal) */
+            text-decoration: none;
+            /* Remove o sublinhado padrão dos links */
+            font-size: 20px;
+            /* Tamanho da fonte dos links */
+        
+        }
+
+        /* Estilo que aparece quando o mouse passa sobre o link */
+        nav a:hover {
+            
+            text-decoration: underline;
+            /* Adiciona sublinhado ao passar o mouse */
+            color: rgb(0, 255, 255);
+            /* Muda a cor para azul ciano */
+        }
+
+
+        /* Estilo do container que envolve todos os cards */
+        .fundo { 
+            display: flex;
+            /* Usa flexbox para organizar os cards lado a lado */
+            gap: 10px;
+            /* Espaço de 10px entre os cards */
+            width: 100%;
+            /* Ocupa 100% da largura disponível */
+            height: 100%;
+            /* Ocupa 100% da altura disponível */
+            flex-wrap: wrap;
+            /* Permite que os cards quebrem para a linha de baixo quando não couberem */
+            justify-content: space-around;
+            /* Distribui os cards com espaço igual ao redor */
+            margin-top: 10px;
+            /* Espaço de 10px acima do container */
+        }
+
+
+        /* Estilo de cada card individualmente */
+        .card {   
+            width: 30px; /* Largura fixa de 300px */
+            height: 350px; /* Altura fixa de 350px */
+            align-items: center; /* Centraliza o conteúdo verticalmente */
+            text-align: center; /* Centraliza o texto */
+            background-color: rgb(93, 90, 186); /* Cor de fundo dos cards (roxo médio) */
+            border-radius: 15px; /* Cantos arredondados */
+            padding: 10px; 
+            
+        }
+
+        card img {
+            /* Estilo da imagem dentro de cada card */
+            width: 10%;
+            /* Imagem ocupa toda a largura do card */
+            height: 80%;
+            /* Imagem ocupa 80% da altura do card */
+            object-fit: cover;
+            /* Recorta a imagem para preencher o espaço sem distorcer */
+            border-radius: 15px;
+            /* Cantos arredondados na imagem */
+        }
+
+        .card:hover {
+            /* Efeito visual quando o mouse passa sobre o card */
+            transform: translate(-100px) scale(7.02);
+            /* Move o card 10px para cima e aumenta levemente o tamanho */
+            border-color: #f79708;
+            /* Muda a cor da borda para laranja */
+            box-shadow: 0 15px 20px #8b4141;
+            /* Adiciona uma sombra escura embaixo do card */
+        }
+
+        .subtitulo {
+            /* Estilo da div do subtítulo abaixo do cabeçalho */
+            text-align: center;
+            /* Centraliza o texto */
+            color: #ffffff;
+            /* Cor do texto: branco */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A tag <body> contém tudo que aparece visualmente na página -->
+
+    <header>
+        <!-- Cabeçalho do site -->
+
+        <h1><strong>WEAK HERO CLASS</strong></h1>
+        <!-- Título principal da página em negrito -->
+
+        <hr>
+        <!-- Linha horizontal separadora -->
+
+        <nav>
+            <!-- Barra de navegação com links do site -->
+            <a href="link Aqui">loja</a>
+            <!-- Link para a página da loja (substituir "link Aqui" pelo endereço real) -->
+            <a href="Link Aqui">sobre</a>
+            <!-- Link para a página "sobre" -->
+            <a href="Link Aqui">fotos</a>
+            <!-- Link para a página de fotos -->
+        </nav
+
+        <hr>
+        <!-- Segunda linha horizontal separadora -->
+    </header>
+
+    <div class="subtitulo">
+        <!-- Div com o subtítulo abaixo do cabeçalho -->
+        <h2>melhor dorama de ação ever</h2>
+        <!-- Subtítulo da página -->
+        <hr>
+        <!-- Linha separadora -->
+    </div>
+
+    <!-- Container principal que envolve todos os cards -
+    <div class="fundo">
+
+
+        <!-- Card 1 - Sieun -->
+        <div class="card">
+            <img src="https://cdn.mos.cms.futurecdn.net/eahBhmZFJH3vWJhsEXJUUL.jpg" alt="">
+            <!-- Imagem do personagem (src = endereço da imagem, alt = descrição para acessibilidade) -->
+            <h2>Sieun</h2>
+            <!-- Nome do personagem -->
+        </div>
+
+        <!-- Card 2 - Suho -->
+        <div class="card">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sf28b4e7cf14c4374a92bb3bff5a83598c.jpg" alt="">
+            <h2>Suho
+        </div>
+
+        <!-- Card 3 - Baku -->
+        <div class="carddddddddddd">
+            <img src="https://ella.janitorai.com/bot-avatars/f5rdrLRnhyD4UB91vscIc.webp?width=1200" alt="">
+            <h2>Baku</h2>
+        </div>
+
+        <!-- Card 4 - Baku (repetido) -->
+        <div class="cradd">
+            <img src="https://ella.janitorai.com/bot-avatars/f5rdrLRnhyD4UB91vscIc.webp?width=1200" alt="">
+            <h2>Baku</h2>
+        </div>
+
+        <!-- Card 5 - Baku (repetido) -->
+        <div class="card">
+            <img src="https://ella.janitorai.com/bot-avatars/f5rdrLRnhyD4UB91vscIc.webp?width=1200" alt="">
+            <h2>Baku</h2>
+        /div>
+
+        <!-- Card 6 - Baku (repetido) -->
+        <div class="card">
+            <img src="https://ella.janitorai.com/bot-avatars/f5rdrLRnhyD4UB91vscIc.webp?width=1200" alt="">
+            <h2>Baku</h2>
+        </div>
+
+        <!-- Card 7 - Baku (repetido) -->
+        <div class="card">
+            <img src="https://ella.janitorai.com/bot-avatars/f5rdrLRnhyD4UB91vscIc.webp?width=1200" alt="">
+            <h2>Baku</h2>
+        </div>
+
+        <!-- Card 8 - Sieun (repetido) -->
+        <div class="card">
+            <img src="https://cdn.mos.cms.futurecdn.net/eahBhmZFJH3vWJhsEXJUUL.jpg" alt="">
+            <h2>Sieun</h2>
+       
+
+        <!-- Card 9 - Sieun (repetido) -->
+        <div class="card">
+            <img src="https://cdn.mos.cms.futurecdn.net/eahBhmZFJH3vWJhsEXJUUL.jpg" alt="">
+            <h2>Sieun</h2>
+        </div>
+
+        <!-- Card 10 - Sieun (repetido) -->
+        <div class="card">
+            <img src="https://cdn.mos.cms.futurecdn.net/eahBhmZFJH3vWJhsEXJUUL.jpg" alt="">
+            <h2>Sieun</h2>
+        </div>
+
+        <!-- Card 11 - Sieun (repetido) -->
+        <div class="card">
+            <img src="https://cdn.mos.cms.futurecdn.net/eahBhmZFJH3vWJhsEXJUUL.jpg" alt="">
+            <h2>Sieun</h2>
+        </div>
+
+        <!-- Card 12 - Sieun (repetido) --
+        <div class="card">
+            <img src="https://cdn.mos.cms.futurecdn.net/eahBhmZFJH3vWJhsEXJUUL.jpg" alt="">
+            <h2>Sieun</h2>
+        </div>
+
+
+
+
+
+
+
+
+
+        
+    div>
+    <!-- Fim do container de cards -->
+
+</body>
+<!-- Fim do conteúdo visível da página -->
+
+</html>
+<!-- Fim do documento HTML -->
